@@ -10,6 +10,7 @@ const profilePicture = "images/ferdinand_stanley_uchechukwu.jpg";
 
 /* Step 3 - Element Variables */
 
+const nameElement = document.getElementById('name');
 const foodElement = document.querySelector('#food');
 const yearElement = document.querySelector("#year");
 const imageElement = document.querySelector('img');
