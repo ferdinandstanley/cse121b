@@ -21,6 +21,7 @@ const imageElement = document.querySelector('img');
 yearElement.textContent = currentYear;
 imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', `This is ${fullName}. He is a web developer`);
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
 
 
