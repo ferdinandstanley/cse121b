@@ -19,7 +19,7 @@ myProfile.placesLived.push({ place: "Port Harcourt, Nigeria", length: "15 years"
 myProfile.placesLived.push({ place: "Abia State, Nigeria", length: "13 years" });
 myProfile.placesLived.push({ place: "Akwa Ibom State, Nigeria", length: "1 year" });
 myProfile.placesLived.push({ place: "Cross River State, Nigeria", length: "1 years" });
-myProfile.placesLived.push({ place: "Lagos State, Nigeria", length: "7 years" });
+myProfile.placesLived.push({ place: "Lagos State, Nigeria", length: "Current Resident" });
 
 
 /* DOM Manipulation - Output */
