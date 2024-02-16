@@ -15,11 +15,11 @@ myProfile.placesLived = []; // Initialize an empty array
 
 /* Populate Profile Object with placesLive objects */
 // placesLived array
-myProfile.placesLived.push({ place: "Port Harcourt", length: "15 years" });
-myProfile.placesLived.push({ place: "Abia State", length: "13 years" });
-myProfile.placesLived.push({ place: "Akwa Ibom State", length: "1 year" });
-myProfile.placesLived.push({ place: "Cross River State", length: "1 years" });
-myProfile.placesLived.push({ place: "Lagos State", length: "7 years" });
+myProfile.placesLived.push({ place: "Port Harcourt, Nigeria", length: "15 years" });
+myProfile.placesLived.push({ place: "Abia State, Nigeria", length: "13 years" });
+myProfile.placesLived.push({ place: "Akwa Ibom State, Nigeria", length: "1 year" });
+myProfile.placesLived.push({ place: "Cross River State, Nigeria", length: "1 years" });
+myProfile.placesLived.push({ place: "Lagos State, Nigeria", length: "7 years" });
 
 
 /* DOM Manipulation - Output */
