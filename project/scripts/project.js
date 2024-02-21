@@ -10,8 +10,6 @@ const fetchData = async () => {
 };
 
 
-
-
 // Function to reset chapel list
 const reset = () => {
     const chapelListContainer = document.getElementById('chapelList');
