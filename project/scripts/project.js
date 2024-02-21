@@ -40,6 +40,28 @@ const displayChapels = async () => {
     });
 };
 
+/* filterChapels Function */
+const filterChapels = chapels => {
+    reset();
+    const filter = document.getElementById("filtered").value;
+
+    switch(filter) {
+        case 'aba':
+            displayChapels(chapels.filter(chapel => chapel.location.includes('aba')));
+            break;
+        case 'abuja':
+            displayChapels(chapels.filter(chapel => !chapel.location.includes('abuja')));
+            break;
+        case 'older':
+            displayChapels(chapels.filter(chapel => new Date(chapel.dedicatedDate) < new Date(2000, 0, 1)));
+            break;
+        case 'all':
+        default:
+            displayChapels(chapel);
+            break;
+    }
+};
+
 // Add event listener to location filter dropdown
 document.getElementById('locationFilter').addEventListener('change', displayChapels);
 
