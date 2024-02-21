@@ -35,6 +35,9 @@ const displayChapels = async () => {
         filteredChapels = chapelsData.filter(chapel => chapel.location.toLowerCase().includes(locationFilter.toLowerCase()));
     }
 
+    // Sort filtered chapels alphabetically by templeName
+    filteredChapels.sort((a, b) => a.templeName.localeCompare(b.templeName));
+
     // Display filtered chapels
     filteredChapels.forEach(chapel => {
         const chapelCard = document.createElement('div');
