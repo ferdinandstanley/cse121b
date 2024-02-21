@@ -62,11 +62,8 @@ const filterChapels = chapels => {
     }
 };
 
-window.onload = () => {
-    getChapels();
-};
+// Add event listener to location filter dropdown
+document.getElementById('locationFilter').addEventListener('change', displayChapels);
 
-/* Event Listener */
-document.getElementById("filtered").addEventListener("change", () => {
-    filterChapels(chapelList);
-});
+// Initial call to display chapels when the page loads
+window.onload = displayChapels;
