@@ -1,7 +1,7 @@
 // Fetch data from the JSON API
 const fetchData = async () => {
     try {
-        const response = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json');
+        const response = await fetch('https://ferdinandstanley.github.io/cse121b/cse121b-project-chapel.json');
         const data = await response.json();
         return data;
     } catch (error) {
