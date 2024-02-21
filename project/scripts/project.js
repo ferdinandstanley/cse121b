@@ -10,27 +10,7 @@ const fetchData = async () => {
 };
 
 
-/* filterChapels Function */
-const filterChapels = chapels => {
-    reset();
-    const filter = document.getElementById("filtered").value;
 
-    switch(filter) {
-        case 'aba':
-            displayChapels(chapels.filter(chapel => chapel.location.includes('aba')));
-            break;
-        case 'abuja':
-            displayChapels(chapels.filter(chapel => !chapel.location.includes('abuja')));
-            break;
-        case 'older':
-            displayChapels(chapels.filter(chapel => new Date(chapel.dedicatedDate) < new Date(2000, 0, 1)));
-            break;
-        case 'all':
-        default:
-            displayChapels(chapels);
-            break;
-    }
-};
 
 // Function to reset chapel list
 const reset = () => {
