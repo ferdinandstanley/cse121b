@@ -1,0 +1,72 @@
+/* Reset default margin and padding */
+body, h1, select {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Style the filter label and select dropdown */
+label {
+    display: block;
+    margin: 20px auto 10px;
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+}
+
+select {
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Style the chapel list container */
+#chapelList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style each chapel card */
+.chapel-card {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style chapel name */
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style chapel location */
+p {
+    color: #666;
+}
+
+/* Style chapel image */
+img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
