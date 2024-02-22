@@ -57,5 +57,8 @@ window.onload = () => {
 
 /* Event Listener */
 document.getElementById("filtered").addEventListener("change", () => {
-    filterTemples(templeList);
+    const selectedFilter = document.getElementById("filtered").value;
+    const filteredTemples = filterTempleData(templeList, selectedFilter);
+    reset();
+    displayTemples(filteredTemples);
 });
