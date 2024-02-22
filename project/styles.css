@@ -70,6 +70,7 @@ img {
     height: auto;
     border-radius: 5px;
 }
+/* style filter by year */
 #filterByYear {
     display: block;
     margin-top: 10px; /* Adjust margin-top as needed */
