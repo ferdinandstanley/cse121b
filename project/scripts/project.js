@@ -9,21 +9,16 @@ const fetchData = async () => {
     }
 };
 
-
 // Function to reset chapel list
 const reset = () => {
     const chapelListContainer = document.getElementById('chapelList');
     chapelListContainer.innerHTML = ''; // Clear previous data
 };
 
-// Add event listener to filtered dropdown
-document.getElementById("locationFilter").addEventListener("change", () => {
-    displayChapels(); // Call displayChapels function when the dropdown value changes
-});
-
-// Function to display chapel list based on location filter
+// Function to display chapel list based on filters
 const displayChapels = async () => {
     const locationFilter = document.getElementById('locationFilter').value;
+    const yearFilter = document.getElementById('yearFilter').value;
     const chapelListContainer = document.getElementById('chapelList');
     reset(); // Reset chapel list before displaying filtered chapels
 
@@ -33,6 +28,11 @@ const displayChapels = async () => {
     // Apply location filter
     if (locationFilter !== 'all') {
         filteredChapels = chapelsData.filter(chapel => chapel.location.toLowerCase().includes(locationFilter.toLowerCase()));
+    }
+
+    // Apply year filter
+    if (yearFilter !== 'all') {
+        filteredChapels = filteredChapels.filter(chapel => new Date(chapel.dedicationDate).getFullYear() === parseInt(yearFilter));
     }
 
     // Sort filtered chapels alphabetically by templeName
@@ -61,8 +61,8 @@ const displayChapels = async () => {
     });
 };
 
-// Add event listener to location filter dropdown
-document.getElementById('locationFilter').addEventListener('change', displayChapels);
+// Add event listener to apply filters button
+document.getElementById('applyFilters').addEventListener('click', displayChapels);
 
 // Initial call to display chapels when the page loads
 window.onload = displayChapels;
