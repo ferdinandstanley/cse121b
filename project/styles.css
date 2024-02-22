@@ -70,3 +70,21 @@ img {
     height: auto;
     border-radius: 5px;
 }
+#filterByYear {
+    display: block;
+    margin-top: 10px; /* Adjust margin-top as needed */
+    margin-left: auto; /* Align to the right */
+    margin-right: auto; /* Align to the left */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filterByYear:hover {
+    background-color: #e0e0e0;
+}
