@@ -37,24 +37,17 @@ const reset = () => {
 };
 
 /* filterTemples Function */
-const filterTemples = temples => {
-    reset();
-    const filter = document.getElementById("filtered").value;
-
+const filterTempleData = function(templeList, filter) {
     switch(filter) {
         case 'utah':
-            displayTemples(temples.filter(temple => temple.location.includes('Utah')));
-            break;
+            return templeList.filter(temple => temple.location.includes('Utah'));
         case 'nonutah':
-            displayTemples(temples.filter(temple => !temple.location.includes('Utah')));
-            break;
+            return templeList.filter(temple => !temple.location.includes('Utah'));
         case 'older':
-            displayTemples(temples.filter(temple => new Date(temple.dedicatedDate) < new Date(1950, 0, 1)));
-            break;
+            return templeList.filter(temple => new Date(temple.dedicatedDate) < new Date(1950, 0, 1));
         case 'all':
         default:
-            displayTemples(temples);
-            break;
+            return templeList;
     }
 };
 
