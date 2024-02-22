@@ -61,8 +61,10 @@ const displayChapels = async () => {
     });
 };
 
-// Add event listener to apply filters button
+// Add event listeners for filters
 document.getElementById('applyFilters').addEventListener('click', displayChapels);
+document.getElementById('locationFilter').addEventListener('change', displayChapels);
+document.getElementById('yearFilter').addEventListener('change', displayChapels);
 
 // Initial call to display chapels when the page loads
 window.onload = displayChapels;
