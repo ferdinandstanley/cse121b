@@ -34,6 +34,10 @@ const displayChapels = async () => {
     if (locationFilter !== 'all') {
         filteredChapels = chapelsData.filter(chapel => chapel.location.toLowerCase().includes(locationFilter.toLowerCase()));
     }
+    // Apply year filter
+    if (yearFilter !== 'all') {
+        filteredChapels = filteredChapels.filter(chapel => new Date(chapel.dedicationDate).getFullYear() === parseInt(yearFilter));
+    }
 
     // Sort filtered chapels alphabetically by templeName
     filteredChapels.sort((a, b) => a.templeName.localeCompare(b.templeName));
