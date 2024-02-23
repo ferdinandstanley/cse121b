@@ -1,5 +1,5 @@
 /* Reset default margin and padding */
-body, h1, select, button {
+body, h1, select {
     margin: 0;
     padding: 0;
 }
@@ -20,8 +20,8 @@ label {
     font-weight: bold;
 }
 
-select, button {
-    display: inline-block;
+select {
+    display: block;
     margin: 0 auto;
     padding: 8px;
     border: 1px solid #ccc;
