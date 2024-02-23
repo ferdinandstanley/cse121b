@@ -63,6 +63,9 @@ const displayChapels = async () => {
 
 // Add event listener to location filter dropdown
 document.getElementById('locationFilter').addEventListener('change', displayChapels);
+document.getElementById('applyFilters').addEventListener('click', displayChapels);
+document.getElementById('yearFilter').addEventListener('change', displayChapels);
+
 
 // Initial call to display chapels when the page loads
 window.onload = displayChapels;
